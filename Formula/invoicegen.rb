@@ -1,9 +1,9 @@
 class Invoicegen < Formula
-  desc "Local-first invoice management CLI"
-  homepage "https://github.com/megabyte0x/invoicegen"
-  url "https://github.com/megabyte0x/invoicegen/archive/refs/tags/v0.1.6.tar.gz"
-  sha256 "22d81ecdfff11f1a51ec2a316f04d03b9f46b890270163e7c44e3194c559c399"
-  license "MIT"
+  desc "Local-first invoice generation CLI"
+  homepage "https://invoicegen.megabyte.sh/cli"
+  url "https://github.com/megabyte0x/invoicegen/archive/refs/tags/v0.1.7.tar.gz"
+  sha256 "fa6860f810e6538b3d8b31e2a81abbeaf61cbcd4b80fc8e9b773744281bfe1ec"
+  license "Apache-2.0"
   head "https://github.com/megabyte0x/invoicegen.git", branch: "main"
 
   depends_on "rust" => :build
@@ -14,6 +14,6 @@ class Invoicegen < Formula
   end
 
   test do
-    assert_match "InvoiceGen Rust CLI", shell_output("#{bin}/invoicegen --help")
+    assert_match "InvoiceGen", shell_output("#{bin}/invoicegen --help")
   end
 end
