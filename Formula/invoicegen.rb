@@ -1,8 +1,8 @@
 class Invoicegen < Formula
   desc "Local-first invoice generation CLI"
   homepage "https://invoicegen.megabyte.sh/cli"
-  url "https://github.com/megabyte0x/invoicegen/archive/refs/tags/v0.1.8.tar.gz"
-  sha256 "0c6e3e700321572c8d1bdad902d01aa18094536bfa93328a2de11cf8be0033cc"
+  url "https://github.com/megabyte0x/invoicegen/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "d887e06cea92488c1af2519042f53977a88a00367b853eaa10bdc3032120487a"
   license "Apache-2.0"
   head "https://github.com/megabyte0x/invoicegen.git", branch: "main"
 
